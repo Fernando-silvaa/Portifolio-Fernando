@@ -1,0 +1,45 @@
+@import url("_cabecalho.css");
+@import url("_principal.css");
+@import url("_sobre.css");
+@import url("_tecnologias.css");
+@import url("_projetos.css");
+@import url("_rodape.css");
+
+:root {
+  --fonte-principal: 'Rubik', sans-serif;
+  --background-principal: #4d5053;
+  --background-secundario: #2c2c2e;
+  --texto-claro: #FFFFFF;
+  --texto-escuro: #706c6c;
+  --borda-sobre: rgb(38, 38, 134);
+}
+
+body {
+  font-family: var(--fonte-principal);
+  color: var(--texto-claro);
+  background-color: var(--background-principal);
+}
+
+a {
+  text-decoration: none;
+  color: var(--texto-claro);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 119px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 1.5s;
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 1.5s;
+  transform: translateX(0);
+}

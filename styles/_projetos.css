@@ -1,0 +1,147 @@
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--background-secundario);
+    transition: 1s;
+}
+
+.projetos__titulo {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.projetos__secao {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 6rem 0;
+}
+
+.projetos__secao-invertido {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.projetos__secao, .projetos__secao-invertido {
+    max-width: 1600px;
+}
+
+.projetos__descricao {
+    width: 50%;
+}
+
+.projetos__descricao-invertido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.projetos__secao-titulo {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.projetos__secao-texto {
+    font-size: 1.5rem;
+    margin: 3rem 0;
+    line-height: 1.3;
+}
+
+.invertido {
+    text-align: end;
+}
+
+.projetos__logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.logos {
+    height: 90px;
+}
+
+.projetos__botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.projetos__btn {
+    border: 1px solid var(--texto-claro);
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 180px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.projetos__btn:hover {
+    background-color: var(--background-principal);
+    border: 1px solid var(--background-principal);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.projetos__desktop {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+
+.projetos__desktop-invertido {
+    display: flex;
+    justify-content: start;
+    width: 50%;
+}
+
+.desktop {
+    width: 100%;
+    max-width: 700px;
+}
+
+@media screen and (max-width: 1000px) {
+    .projetos {
+        justify-content: center;
+    }
+
+    .projetos__secao, .projetos__secao-invertido {
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .projetos__descricao, .projetos__descricao-invertido {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projetos__botoes {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .projetos__desktop {
+        width: 100%;
+    }
+
+    .desktop {
+        max-width: 100%;
+    }
+
+    .projetos__logos {
+        justify-content: center;
+    }
+}

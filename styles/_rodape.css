@@ -1,0 +1,48 @@
+.rodape {
+    background-color: var(--background-principal);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape__descricao {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.rodape__descricao span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.rodape__contatos {
+    display: flex;
+    gap: 3rem;
+}
+
+.rodape__logotipo {
+    height: 60px;
+}
+
+.rodape__logotipo:hover {
+    transition: 0.8s;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 800px) {
+    .rodape {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .rodape__descricao {
+        align-items: center;
+    }
+
+    .rodape__contatos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

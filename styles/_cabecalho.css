@@ -1,0 +1,155 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.cabecalho {
+  background-color: var(--background-secundario);
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.cabecalho__logo {
+  width: 100px;
+}
+
+.menu-hamburguer {
+  display: none;
+}
+  
+.cabecalho__lista {
+  display: flex;
+  gap: 2rem;
+}
+
+.cabecalho__lista-item a {
+  transition: 0.3s;
+  color: var(--texto-claro);
+}
+
+.cabecalho__lista-item a:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+nav ul:hover li a {
+  color: var(--texto-escuro);
+}
+
+.cabecalho__lista li a:hover {
+  color: var(--texto-claro);
+  transform: scale(1.5);
+}
+
+.cabecalho__lista-item {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+  .cabecalho__lista {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cabecalho {
+    padding: 1rem;
+  }
+    
+  .cabecalho__logo {
+    width: 80px;
+    margin-left: 1rem;
+  }
+
+  .cabecalho__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    gap: 4rem;
+    width: 50%;
+    margin-top: 5rem;
+    height: 100vw;
+    top: 0;
+    background-color: var(--background-secundario);
+    padding: 2rem;
+    left: -850px;
+    transition: 1s;
+  }
+
+  .cabecalho__lista-item {
+    font-size: 2rem;
+  }
+
+  .ativo {
+    left: 0;
+    transition: 1s;
+  }
+
+    /* MENU HAMBURGUER */
+  .menu-hamburguer {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+  }
+
+  .menu-hamburguer input {
+    display: none;
+  }
+
+  .menu-hamburguer span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+
+  .menu-hamburguer span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+
+  .menu-hamburguer span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+
+  .menu-hamburguer span:nth-of-type(3) {
+    top: 100%;
+    transform: translateY(-100%);
+    transform-origin: left center;
+  }
+
+  .menu-hamburguer input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+
+  .menu-hamburguer input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  .menu-hamburguer input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+  }
+}

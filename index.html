@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernando Silva">
+    <meta name="description" content="Descubra como trabalho em criação de página WEB. Seja bem vindo(a) ao meu portifólio como Desenvolvedor Front-End!">
+    <title>Fernando Cardoso da Silva</title>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <label class="menu-hamburguer" for="hamburguer">
+                <input class="btn" type="checkbox" id="hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <picture>
+                <img class="cabecalho__logo" src="./img/Logo.svg" alt="Desenho de um notebook com imagens de linguagens de programação">
+            </picture>
+           
+            <ul class="cabecalho__lista">
+                <li class="cabecalho__lista-item">
+                    <a href="#principal">Home</a>
+                </li>
+                <li class="cabecalho__lista-item">
+                    <a href="#sobre">Sobre mim</a>
+                </li>
+                <li class="cabecalho__lista-item">
+                    <a href="#tecnologia">Tecnologias</a>
+                </li>
+                <li class="cabecalho__lista-item">
+                    <a href="#projetos">Projetos</a>
+                </li>
+            </ul>
+
+            
+        </nav>
+    </header>
+    <main>
+        <section class="principal hidden" id="principal">
+            <div class="principal__textos">
+                <h2 class="principal__texto">Olá, eu sou o</h2>
+                <span class="principal__titulo">Fernando Silva</span>
+                <h2 class="principal__texto">Desenvolvedor Front-End</h2>
+                <div class="principal__links">
+                    <a href="#" class="principal__link">
+                        <img src="./img/linkedinBranco.svg" class="principal__link-imagem" alt="">
+                        <span class="principal__link-texto">Linkedin</span>
+                    </a>
+                    <a href="https://github.com/Fernando-silvaa" class="principal__link">
+                        <img src="./img/GitHubBranco.svg" class="principal__link-imagem" alt="Logotipo GitHub">
+                        <span class="principal__link-texto">GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="principal__imagem">
+                <img class="principal__foto" src="./img/foto.jpg" alt="">
+            </div>
+        </section>
+        
+        <section class="sobre__container" id="sobre">
+            <div class="sobre hidden">
+                <div class="classe">
+                    <img src="./img/avatar.svg" class="sobre__imagem" alt="Desenho do Fernando usando o computador">
+                </div>
+                <div class="sobre__descricao">
+                    <h1 class="sobre__titulo">Sobre mim</h1>
+                    <p class="sobre__texto">Me chamo Fernando Cardoso da Silva e no momento estou estudando muito sobre Desenvolvimento Front-End. Minha trajetória profissional começa quando tinha 16 anos quando comecei no mercado de trabalho como Design Gráfico.</p>
+                    <p class="sobre__texto">Depois de alguns anos migrei de carreira atuando como Vigilante. Fiz o curso com êxito e comecei a trabalhar em 2015 onde atuo até o momento. Após ver um amigo trabalhando na área de TI no back-end, fiquei curioso e ele me mostrou como códigos podem se transformar em uma página web ou algum programa. Ai resolvi entender como isso funciona e acabei gostando muito, foi ai que resolvi voltar ao mundo dos computadores e tecnologias atuando como Desenvolvedor Front-End.</p>
+                    <p class="sobre__texto">Sou o Fernando e adoraria te mostrar alguns de meus projetos no GitHub e não deixe de ver meu perfil do Linkedin aonde mostro todo meu histórico profissional.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tecnologias hidden" id="tecnologia">
+            <h2 class="tecnologias__titulo">Tecnologias</h2>
+            <span class="tecnologias__subtitulo">Clique na imagem para saber a descrição</span>
+            <section class="tecnologias__container">
+                <div class="tecnologias__descricao">
+                    <h2 class="tecnologias__descricao-texto">/* descrição  */</h2>
+                </div>
+                <div class="tecnologias__imagens">
+                    <img src="./img/HTML.svg" id="html" class="tecnologias__logos" alt="Logotipo HTML = Línguagem de marcação usada para desenvolvimento web">
+                    <img src="./img/CSS.svg" id="css" class="tecnologias__logos" alt="Logotipo CSS = Línguagem de estilização usada para desenvolvimento web">
+                    <img src="./img/Bootstrap.svg" id="bootstrap" class="tecnologias__logos" alt="Logotipo Bootstrap = Framework de estilização usada para desenvolvimento web">
+                    <img src="./img/JavaScript.svg" id="javaScript" class="tecnologias__logos" alt="Logotipo JavaScript = Línguagem de programação usada para desenvolvimento web">
+                    <img src="./img/TypeScript.svg" id="typeScript" class="tecnologias__logos" alt="Logotipo TypeScript = Línguagem de programação usada para desenvolvimento web">
+                    <img src="./img/GIT.svg" id="git" class="tecnologias__logos" alt="Logotipo GIT = Sistema de controle de versão de códigos">
+                    <img src="./img/GitHub.svg" id="gitHub" class="tecnologias__logos" alt="Logotipo GitHub = Plataforma de hospedagem de código">
+                </div>
+            </section>
+        </section>
+
+        <section class="projetos" id="projetos">
+            <h2 class="projetos__titulo">Projetos</h2>
+            
+            <!-- PROJETOS -->
+            <div class="projetos__secao hidden">
+                <section class="projetos__descricao">
+                    <h3 class="projetos__secao-titulo">Serenato Café e Bistrô</h3>
+                    <p class="projetos__secao-texto">Projeto Serenatto Café e Bistrô é um projeto de estudo no qual consiste em uma página web de uma cafeteria de alto padrão. Utilizando as tecnologias HTML, CSS, Bootstrap e JavaScript.</p>
+                    <div class="projetos__logos">
+                        <img src="./img/HTML.svg" class="logos" alt="Logotipo HTML = Línguagem de marcação usada para desenvolvimento web">
+                        <img src="./img/CSS.svg" class="logos" alt="Logotipo CSS = Línguagem de estilização usada para desenvolvimento web">
+                        <img src="./img/Bootstrap.svg" class="logos" alt="Logotipo Bootstrap = Framework de estilização usada para desenvolvimento web">
+                        <img src="./img/JavaScript.svg" alt="Logotipo JavaScript = Línguagem de programação usada para desenvolvimento web">
+                    </div>
+                    <div class="projetos__botoes">
+                       <a href="https://fernando-silvaa.github.io/Serenatto-Cafe-Bistro/" class="projetos__btn">
+                            <span>Ver página</span>
+                        </a>
+                        <a href="https://github.com/Fernando-silvaa/Serenatto-Cafe-Bistro/tree/main" class="projetos__btn">
+                            <span>Ver código</span>
+                        </a>
+                    </div>
+                </section>
+                <div class="projetos__desktop">
+                    <img src="./img/bootstrap.png" class="desktop" alt="Computador, tablet e celular com a página da Serenatto nas telas">
+                </div>
+            </div>
+
+            <div class="projetos__secao-invertido hidden">
+                <section class="projetos__descricao-invertido">
+                    <h3 class="projetos__secao-titulo">Fokus</h3>
+                    <p class="projetos__secao-texto invertido">Projeto Fokus é pra quem quer estudar ou fazer alguma tarefa mas não sabe quanto tempo precisa. Com o intuito de ajudar com tempo de foco e tempos de descanso curto e longo. Utilizando as tecnologias HTML, CSS e JavaScript.</p>
+                    <div class="projetos__logos">
+                        <img src="./img/HTML.svg" class="logos" alt="Logotipo HTML = Línguagem de marcação usada para desenvolvimento web">
+                        <img src="./img/CSS.svg" class="logos" alt="Logotipo CSS = Línguagem de estilização usada para desenvolvimento web">
+                        <img src="./img/JavaScript.svg" alt="Logotipo JavaScript = Línguagem de programação usada para desenvolvimento web">
+                    </div>
+                    <div class="projetos__botoes">
+                       <a href="https://fernando-silvaa.github.io/Projeto-Fokus/" class="projetos__btn">
+                            <span>Ver página</span>
+                        </a>
+                        <a href="https://github.com/Fernando-silvaa/Projeto-Fokus" class="projetos__btn">
+                            <span>Ver código</span>
+                        </a>
+                    </div>
+                </section>
+                <div class="projetos__desktop-invertido">
+                    <img src="./img/fokus.png" class="desktop" alt="Computador, tablet e celular com a página da Serenatto nas telas">
+                </div>
+            </div>
+
+            <div class="projetos__secao hidden">
+                <section class="projetos__descricao">
+                    <h3 class="projetos__secao-titulo">Gravar Digital</h3>
+                    <p class="projetos__secao-texto">E-commerce de uma gráfica virtual com muitos presentes, carimbos, placas e impressos para você ou para seu negócio. Utilizando as tecnologias HTML, CSS e JavaScript.</p>
+                    <div class="projetos__logos">
+                        <img src="./img/HTML.svg" class="logos" alt="Logotipo HTML = Línguagem de marcação usada para desenvolvimento web">
+                        <img src="./img/CSS.svg" class="logos" alt="Logotipo CSS = Línguagem de estilização usada para desenvolvimento web">
+                        <img src="./img/JavaScript.svg" alt="Logotipo JavaScript = Línguagem de programação usada para desenvolvimento web">
+                    </div>
+                    <div class="projetos__botoes">
+                       <a href="https://gravar-digital.vercel.app/" class="projetos__btn">
+                            <span>Ver página</span>
+                        </a>
+                        <a href="https://github.com/Fernando-silvaa/Gravar-Digital" class="projetos__btn">
+                            <span>Ver código</span>
+                        </a>
+                    </div>
+                </section>
+                <div class="projetos__desktop">
+                    <img src="./img/gravar.png" class="desktop" alt="Computador, tablet e celular com a página da Serenatto nas telas">
+                </div>
+            </div>
+
+            <div class="projetos__secao-invertido hidden">
+                <section class="projetos__descricao-invertido">
+                    <h3 class="projetos__secao-titulo">Mochila de viagem</h3>
+                    <p class="projetos__secao-texto invertido">Você que vai viajar mas sempre acaba esquecendo algo, com a página da mochila de viagem acabou o seu problema. Podendo adicionar o ítem e a quantidade ou remover quando quiser. Utilizando as tecnologias HTML, CSS e JavaScript.</p>
+                    <div class="projetos__logos">
+                        <img src="./img/HTML.svg" class="logos" alt="Logotipo HTML = Línguagem de marcação usada para desenvolvimento web">
+                        <img src="./img/CSS.svg" class="logos" alt="Logotipo CSS = Línguagem de estilização usada para desenvolvimento web">
+                        <img src="./img/JavaScript.svg" alt="Logotipo JavaScript = Línguagem de programação usada para desenvolvimento web">
+                    </div>
+                    <div class="projetos__botoes">
+                       <a href="https://fernando-silvaa.github.io/Mochila-de-viagem/" class="projetos__btn">
+                            <span>Ver página</span>
+                        </a>
+                        <a href="https://github.com/Fernando-silvaa/Mochila-de-viagem" class="projetos__btn">
+                            <span>Ver código</span>
+                        </a>
+                    </div>
+                </section>
+                <div class="projetos__desktop-invertido">
+                    <img src="./img/mochila.png" class="desktop" alt="Computador, tablet e celular com a página da Serenatto nas telas">
+                </div>
+            </div>
+
+            <div class="projetos__secao hidden">
+                <section class="projetos__descricao">
+                    <h3 class="projetos__secao-titulo">NandoTube</h3>
+                    <p class="projetos__secao-texto">Uma página tentando replicar ao máximo o YouTube mas contendo somente vídeos sobre o universo da Tecnologia. Utilizando as tecnologias HTML, CSS e JavaScript.</p>
+                    <div class="projetos__logos">
+                        <img src="./img/HTML.svg" class="logos" alt="Logotipo HTML = Línguagem de marcação usada para desenvolvimento web">
+                        <img src="./img/CSS.svg" class="logos" alt="Logotipo CSS = Línguagem de estilização usada para desenvolvimento web">
+                        <img src="./img/JavaScript.svg" alt="Logotipo JavaScript = Línguagem de programação usada para desenvolvimento web">
+                    </div>
+                    <div class="projetos__botoes">
+                       <a href="https://fernando-silvaa.github.io/NandoTube/" class="projetos__btn">
+                            <span>Ver página</span>
+                        </a>
+                        <a href="https://github.com/Fernando-silvaa/NandoTube" class="projetos__btn">
+                            <span>Ver código</span>
+                        </a>
+                    </div>
+                </section>
+                <div class="projetos__desktop">
+                    <img src="./img/nandoTube.png" class="desktop" alt="Computador, tablet e celular com a página da Serenatto nas telas">
+                </div>
+            </div>
+            <!-- FIM DOS PROJETOS -->
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__descricao">
+            <span>Desenvolvido por Fernando Cardoso da Silva</span>
+            <span>Contato: nando_394pd.6@gmail.com</span>
+        </div>
+        <div class="rodape__contatos">
+            <a href="https://www.instagram.com/fernandcsilva/">
+                <img src="./img/Instagram.svg" class="rodape__logotipo" alt="Logotipo do Intagram">
+            </a>
+            <a href="https://wa.me/51993674799">
+                <img src="./img/Whats3.svg" class="rodape__logotipo" alt="Logotipo do WhatsApp">
+            </a>
+            <a href="">
+                <img src="./img/linkedin.svg" class="rodape__logotipo" alt="Logotipo do Linkedin">
+            </a>
+            <a href="https://github.com/Fernando-silvaa">
+                <img src="./img/GitHubBranco.svg" class="rodape__logotipo" alt="Logotipo do GitHub">
+            </a>
+        </div>
+    </footer>
+<script src="./js/main.js"></script>
+<script src="./js/menuHamburguer.js"></script>
+<script src="./js/novo.js"></script>
+<script src="./js/scroll.js"></script>
+</body>
+</html>
