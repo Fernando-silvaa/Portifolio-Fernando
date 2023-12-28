@@ -1,6 +1,7 @@
 const textoTecnologias = document.querySelector('.tecnologias__descricao-texto');
 const html = document.getElementById('html');
 const css = document.getElementById('css');
+const sass = document.getElementById('sass');
 const bootstrap = document.getElementById('bootstrap');
 const javaScript = document.getElementById('javaScript');
 const typeScript = document.getElementById('typeScript');
@@ -15,6 +16,10 @@ html.onclick = () => {
 css.onclick = () => {
     textoTecnologias.innerHTML = 'CSS é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML'
 };
+
+sass.onclick = () => {
+    textoTecnologias.innerHTML = 'SASS é uma linguagem de folha de estilo que é compilada para CSS. Ele permite que você use variáveis, regras aninhadas, mixins, funções e muito mais, tudo com uma sintaxe totalmente compatível com CSS'
+}
 
 bootstrap.onclick = () => {
     textoTecnologias.innerHTML = 'O Bootstrap é um framework CSS baseado na estilização de componentes através de classes diminuindo o tempo de execução de desenvolvimento web.'
